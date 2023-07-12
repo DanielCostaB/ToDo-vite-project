@@ -1,5 +1,7 @@
 import { useState } from 'react'
 
+import "./App.css";
+
 function App() {
   const [todos, setTodos] = useState([
   {
@@ -31,6 +33,10 @@ function App() {
             <div className='content'>
               <p>{todo.text}</p>
               <p className="category">({todo.category})</p>
+              </div>
+              <div>
+                <button>Completar</button>
+                <button>X</button>
               </div>
             </div>
         ))}
